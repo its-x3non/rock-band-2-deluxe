@@ -123,12 +123,20 @@
                 {do
                     ($modifier
                         {modifiers.lst selected_sym})
-                    {if_else
-                        {modifier_mgr is_modifier_unlocked $modifier}
-                        kDataUnhandled
-                        {do
-                            {synth play button_error}
-                            0
+                    {if_else {|| {== $modifier mod_staticfills} {== $modifier mod_freestyledrums} {== $modifier mod_calibration} {== $modifier mod_autokick} {== $modifier mod_auto_play} {== $modifier mod_fakejuke}}
+                        {if_else $iamingamenow
+                            {do
+                                {synth play button_error}
+                                0
+                            }
+                            kDataUnhandled
+                        }
+                        {if_else {modifier_mgr is_modifier_unlocked $modifier}
+                            kDataUnhandled
+                            {do
+                                {synth play button_error}
+                                0
+                            }
                         }
                     }
                 }
