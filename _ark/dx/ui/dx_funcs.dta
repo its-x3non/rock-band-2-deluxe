@@ -15,6 +15,16 @@
 {func get_track_1_panel
    {{get_track_panel} find track_1}
 }
+
+;set the gold star texture for each gold star label
+{func set_gold_star ($star)
+   {{{{get_track_panel} find scoreboard} find gold_star_01.lbl} set_type $star}
+   {{{{get_track_panel} find scoreboard} find gold_star_02.lbl} set_type $star}
+   {{{{get_track_panel} find scoreboard} find gold_star_03.lbl} set_type $star}
+   {{{{get_track_panel} find scoreboard} find gold_star_04.lbl} set_type $star}
+   {{{{get_track_panel} find scoreboard} find gold_star_05.lbl} set_type $star}
+}
+
 ;fake log writer so rb3 ported script doesnt crash
 {func
    dx_log_writer

@@ -4439,6 +4439,36 @@
          (texts
             (text
                "icons_tour.txt")))
+      (icons_tour_fnfestival
+         (resource_file
+            "resource/icons_tour_fnfestival.milo")
+         (texts
+            (text
+               "icons_tour.txt")))
+      (icons_tour_lrb
+         (resource_file
+            "resource/icons_tour_lrb.milo")
+         (texts
+            (text
+               "icons_tour.txt")))
+      (icons_tour_rb3
+         (resource_file
+            "resource/icons_tour_rb3.milo")
+         (texts
+            (text
+               "icons_tour.txt")))
+      (icons_tour_rb4
+         (resource_file
+            "resource/icons_tour_rb4.milo")
+         (texts
+            (text
+               "icons_tour.txt")))
+      (icons_tour_yarg
+         (resource_file
+            "resource/icons_tour_yarg.milo")
+         (texts
+            (text
+               "icons_tour.txt")))
       (checkmarks
          (resource_file
             "resource/checkmarks.milo")

@@ -73,7 +73,7 @@
                {if {== $crowdmetertex "rb2"} {set $crowdmetertex "none"} {set $crowdmetercustomtexture FALSE}}
                {if {== $scoretex "rb4"} {set $scoretex "none"} {set $scorecustomtexture FALSE}}
                {if {== $solobox "rb2"} {set $solobox "none"} {set $soloboxcustomtexture FALSE}}
-               {if {== $stars "rb4"} {set $stars "none"} {set $starscustomtexture FALSE}}
+               {if {== $stars "rb2dx"} {set $stars "none"} {set $starscustomtexture FALSE}}
                {if {== $font "rb2"} {set $font "none"} {set $fontcustomtexture FALSE}}
                {if {== $bretex "rb2"} {set $bretex "none"} {set $brecustomtexture FALSE}}
                {if {== $voxarrow "rb2dx"} {set $voxarrow "none"} {set $voxarrowcustomtexture FALSE}}
@@ -381,21 +381,28 @@
 
    #ifndef MHX_OG
    {unless {gamemode get is_h2h_arrangement}
-      {if_else {|| {== $stars "rb1"} {&& $dx_queue_stock_track {== $stars "none"}} {== $stars "rb2"} {== $stars "rb3_alt"}}
-         {do
-            {{{{get_track_panel} find scoreboard} find gold_star_01.lbl} set_type icons_tour_vanilla}
-            {{{{get_track_panel} find scoreboard} find gold_star_02.lbl} set_type icons_tour_vanilla}
-            {{{{get_track_panel} find scoreboard} find gold_star_03.lbl} set_type icons_tour_vanilla}
-            {{{{get_track_panel} find scoreboard} find gold_star_04.lbl} set_type icons_tour_vanilla}
-            {{{{get_track_panel} find scoreboard} find gold_star_05.lbl} set_type icons_tour_vanilla}
-         }
-         {do
-            {{{{get_track_panel} find scoreboard} find gold_star_01.lbl} set_type icons_tour}
-            {{{{get_track_panel} find scoreboard} find gold_star_02.lbl} set_type icons_tour}
-            {{{{get_track_panel} find scoreboard} find gold_star_03.lbl} set_type icons_tour}
-            {{{{get_track_panel} find scoreboard} find gold_star_04.lbl} set_type icons_tour}
-            {{{{get_track_panel} find scoreboard} find gold_star_05.lbl} set_type icons_tour}
-         }
+      {cond 
+         ({|| {== $stars "rb1"} {&& $dx_queue_stock_track {== $stars "none"}} {== $stars "rb2"} {== $stars "rb3_alt"}}
+            {set_gold_star icons_tour_vanilla}
+         )
+         ({|| {== $stars "rb2dx"} {&& {! $dx_queue_stock_track} {== $stars "none"}}}
+            {set_gold_star icons_tour}
+         )
+         ({== $stars "rb3"}
+            {set_gold_star icons_tour_rb3}
+         )
+         ({== $stars "rb4"}
+            {set_gold_star icons_tour_rb4}
+         )
+         ({== $stars "lrb"}
+            {set_gold_star icons_tour_lrb}
+         )
+         ({== $stars "fnfestival"}
+            {set_gold_star icons_tour_fnfestival}
+         )
+         ({== $stars "yarg"}
+            {set_gold_star icons_tour_yarg}
+         )
       }
    }
 
