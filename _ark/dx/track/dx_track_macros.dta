@@ -557,6 +557,19 @@
       ; will implement when im done being lazy
       #endif
    }
+   
+   {if $sustaincustomtexture
+	{{$this find track_flash_green.tex} set_bitmap "track/custom_track_textures/track_flash_green.png"}
+	{{$this find track_flash_green_glow.tex} set_bitmap "track/custom_track_textures/track_flash_green_glow.png"}
+	{{$this find track_flash_red.tex} set_bitmap "track/custom_track_textures/track_flash_red.png"}
+	{{$this find track_flash_red_glow.tex} set_bitmap "track/custom_track_textures/track_flash_red_glow.png"}
+	{{$this find track_flash_yellow.tex} set_bitmap "track/custom_track_textures/track_flash_yellow.png"}
+	{{$this find track_flash_yellow_glow.tex} set_bitmap "track/custom_track_textures/track_flash_yellow_glow.png"}
+	{{$this find track_flash_blue.tex} set_bitmap "track/custom_track_textures/track_flash_blue.png"}
+	{{$this find track_flash_blue_glow.tex} set_bitmap "track/custom_track_textures/track_flash_blue_glow.png"}
+	{{$this find track_flash_orange.tex} set_bitmap "track/custom_track_textures/track_flash_orange.png"}
+	{{$this find track_flash_orange_glow.tex} set_bitmap "track/custom_track_textures/track_flash_orange_glow.png"}
+   }
 
    ;after all of the queued texture updates are completed, set them to false so they do not run again until a new texture is queued via overshell
    #ifndef HX_EE ; ps2 resets textures once the track is unloaded, so dont do this there
@@ -580,6 +593,7 @@
       {set $spotlightgtrcustomtexture FALSE}
       {set $spotlightbasscustomtexture FALSE}
       {set $spotlightdrumcustomtexture FALSE}
+	  {set $sustaincustomtexture FALSE}
       {set $texrunonce TRUE}
    }
    #endif
@@ -638,6 +652,8 @@
 {unless {== $voxod none} {set $voxodcustomtexture TRUE}}
 
 {unless {== $voxhw none} {set $voxhwcustomtexture TRUE}}
+
+{unless {== $sustain none} {set $sustaincustomtexture TRUE}}
 
 )
 
