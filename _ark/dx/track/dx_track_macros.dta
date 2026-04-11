@@ -653,7 +653,7 @@
 
 {unless {== $voxhw none} {set $voxhwcustomtexture TRUE}}
 
-{unless {== $sustains none} {set $sustaincustomtexture TRUE}}
+{unless {== $sustains none} {set $sustainscustomtexture TRUE}}
 
 )
 
