@@ -9,7 +9,7 @@
 {set $dx_connected_server none}
 
 ;sets default track speed. 1.15 is 115%, 1.30 is 130% and so on.
-{set $trackspeed 1.4}
+{set $trackspeed 1.55}
 
 ;sets default track length. 1.15 is 115%, 1.30 is 130% and so on.
 {set $tracklength 1.0}
