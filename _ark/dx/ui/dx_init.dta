@@ -9,7 +9,7 @@
 {set $dx_connected_server none}
 
 ;sets default track speed. 1.15 is 115%, 1.30 is 130% and so on.
-{set $trackspeed 1.0}
+{set $trackspeed 1.15}
 
 ;sets default track length. 1.15 is 115%, 1.30 is 130% and so on.
 {set $tracklength 1.0}
@@ -19,7 +19,7 @@
 {set $leaderspeed $speedmod}
 
 ;set default venue fps.
-{set $emulatefps 30}
+{set $emulatefps 20}
 
 ;set FC indicator type
 {set $fctype glow}
@@ -31,13 +31,13 @@
 {set $slot5_color 4} ;4 = orange
 
 ;gem texture
-{set $gem "rb2dx"}
+{set $gem "trans"}
 
 ;strikeline texture
 #ifdef HX_WII ; wii transparency is broken atm, so the rb2dx smashers don't exist
 {set $smasher "rb2"} ; set it to rb2 "HD" texture instead
 #else
-{set $smasher "rb2dx"}
+{set $smasher "trans"}
 #endif
 
 ;lanes texture
@@ -89,13 +89,13 @@
 {set $crowdmetertex "rb2"}
 
 ;score texture
-{set $scoretex "rb4"}
+{set $scoretex "rb2"}
 
 ;solo box texture
 {set $solobox "rb2"}
 
 ;stars texture
-{set $stars "rb2dx"}
+{set $stars "rb2"}
 
 ;score font texture
 {set $font "rb2"}
