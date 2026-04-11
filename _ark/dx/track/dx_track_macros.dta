@@ -558,7 +558,7 @@
       #endif
    }
    
-   {if $sustaincustomtexture
+   {if $sustainscustomtexture
 	{{$this find track_flash_green.tex} set_bitmap "track/custom_track_textures/track_flash_green.png"}
 	{{$this find track_flash_green_glow.tex} set_bitmap "track/custom_track_textures/track_flash_green_glow.png"}
 	{{$this find track_flash_red.tex} set_bitmap "track/custom_track_textures/track_flash_red.png"}
@@ -593,7 +593,7 @@
       {set $spotlightgtrcustomtexture FALSE}
       {set $spotlightbasscustomtexture FALSE}
       {set $spotlightdrumcustomtexture FALSE}
-	  {set $sustaincustomtexture FALSE}
+	  {set $sustainscustomtexture FALSE}
       {set $texrunonce TRUE}
    }
    #endif
@@ -653,7 +653,7 @@
 
 {unless {== $voxhw none} {set $voxhwcustomtexture TRUE}}
 
-{unless {== $sustain none} {set $sustaincustomtexture TRUE}}
+{unless {== $sustains none} {set $sustaincustomtexture TRUE}}
 
 )
 
