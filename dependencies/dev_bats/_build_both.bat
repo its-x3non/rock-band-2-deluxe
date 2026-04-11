@@ -2,7 +2,7 @@
 cd ..\..
 echo Pulling latest Rock Band 2 Deluxe commit...
 echo.
-git pull https://github.com/hmxmilohax/rock-band-2-deluxe main
+git pull https://github.com/its-x3non/rock-band-2-deluxe main
 echo.
 echo Building Rock Band 2 Deluxe for PS3...
 echo.

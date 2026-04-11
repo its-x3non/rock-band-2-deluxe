@@ -47,7 +47,7 @@
 {set $nogemdividers FALSE}
 
 ;highway texture (guitar)
-{set $highwaygtr "_1_none"}
+{set $highwaygtr "transgender"}
 
 ;highway texture (bass)
 {set $highwaybass "_1_none"}
