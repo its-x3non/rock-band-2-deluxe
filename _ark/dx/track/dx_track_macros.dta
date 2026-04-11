@@ -28,7 +28,6 @@
          {if {== $voxnotes "rb2"} {set $voxnotes "none"} {set $voxnotescustomtexture FALSE}}
          {if {== $voxod "rb2"} {set $voxod "none"} {set $voxodcustomtexture FALSE}}
          {if {== $voxhw "rb2"} {set $voxhw "none"} {set $voxhwcustomtexture FALSE}}
-		 {if {== $sustains "rb2"} {set $sustains "none"} {set $sustainscustomtexture FALSE}}
       #else
       {if_else $dx_queue_stock_track
          {do
@@ -55,7 +54,6 @@
             {if {== $voxnotes "rb2"} {set $voxnotes "none"} {set $voxnotescustomtexture FALSE}}
             {if {== $voxod "rb2"} {set $voxod "none"} {set $voxodcustomtexture FALSE}}
             {if {== $voxhw "rb2"} {set $voxhw "none"} {set $voxhwcustomtexture FALSE}}
-			{if {== $sustains "rb2"} {set $sustains "none"} {set $sustainscustomtexture FALSE}}
          }
          {unless $iamingamenow
             {do
@@ -82,7 +80,6 @@
                {if {== $voxnotes "rb2dx"} {set $voxnotes "none"} {set $voxnotescustomtexture FALSE}}
                {if {== $voxod "rb2"} {set $voxod "none"} {set $voxodcustomtexture FALSE}}
                {if {== $voxhw "rb2"} {set $voxhw "none"} {set $voxhwcustomtexture FALSE}}
-			   {if {== $sustains "rb2"} {set $sustains "none"} {set $sustainscustomtexture FALSE}}
             }
          }
       }
@@ -278,6 +275,18 @@
       {{$this find prism_green.tex} set_bitmap {sprint "track/gems/prism_green_" $gem ".png"}}
       {{$this find prism_red.tex} set_bitmap {sprint "track/gems/prism_red_" $gem ".png"}}
       {{$this find prism_spotlight.tex} set_bitmap {sprint "track/gems/prism_spotlight_" $gem ".png"}}
+	  
+		{{$this find track_flash_green.tex} set_bitmap "track/custom_track_textures/track_flash_green.png"}
+		{{$this find track_flash_green_glow.tex} set_bitmap "track/custom_track_textures/track_flash_green_glow.png"}
+		{{$this find track_flash_red.tex} set_bitmap "track/custom_track_textures/track_flash_red.png"}
+		{{$this find track_flash_red_glow.tex} set_bitmap "track/custom_track_textures/track_flash_red_glow.png"}
+		{{$this find track_flash_yellow.tex} set_bitmap "track/custom_track_textures/track_flash_yellow.png"}
+		{{$this find track_flash_yellow_glow.tex} set_bitmap "track/custom_track_textures/track_flash_yellow_glow.png"}
+		{{$this find track_flash_blue.tex} set_bitmap "track/custom_track_textures/track_flash_blue.png"}
+		{{$this find track_flash_blue_glow.tex} set_bitmap "track/custom_track_textures/track_flash_blue_glow.png"}
+		{{$this find track_flash_orange.tex} set_bitmap "track/custom_track_textures/track_flash_orange.png"}
+		{{$this find track_flash_orange_glow.tex} set_bitmap "track/custom_track_textures/track_flash_orange_glow.png"}
+	  
       #endif
    }
 
@@ -560,24 +569,6 @@
       ; will implement when im done being lazy
       #endif
    }
-   
-   {if $sustainscustomtexture
-
-	{{$this find track_flash_green.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_green_" $sustains ".png"}}
-	{{$this find track_flash_green_glow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_green_glow_" $sustains ".png"}}
-	
-	{{$this find track_flash_red.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_red_" $sustains ".png"}}
-	{{$this find track_flash_red_glow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_red_glow_" $sustains ".png"}}
-	
-	{{$this find track_flash_yellow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_yellow_" $sustains ".png"}}
-	{{$this find track_flash_yellow_glow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_yellow_glow_" $sustains ".png"}}
-	
-	{{$this find track_flash_blue.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_blue_" $sustains ".png"}}
-	{{$this find track_flash_blue_glow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_blue_glow_" $sustains ".png"}}
-	
-	{{$this find track_flash_orange.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_orange_" $sustains ".png"}}
-	{{$this find track_flash_orange_glow.tex} set_bitmap {sprint "track/custom_track_textures/track_flash_orange_glow_" $sustains ".png"}}
-   }
 
    ;after all of the queued texture updates are completed, set them to false so they do not run again until a new texture is queued via overshell
    #ifndef HX_EE ; ps2 resets textures once the track is unloaded, so dont do this there
@@ -601,7 +592,6 @@
       {set $spotlightgtrcustomtexture FALSE}
       {set $spotlightbasscustomtexture FALSE}
       {set $spotlightdrumcustomtexture FALSE}
-	  {set $sustainscustomtexture FALSE}
       {set $texrunonce TRUE}
    }
    #endif
@@ -660,8 +650,6 @@
 {unless {== $voxod none} {set $voxodcustomtexture TRUE}}
 
 {unless {== $voxhw none} {set $voxhwcustomtexture TRUE}}
-
-{unless {== $sustains none} {set $sustainscustomtexture TRUE}}
 
 )
 

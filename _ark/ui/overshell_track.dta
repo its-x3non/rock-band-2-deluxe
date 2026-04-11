@@ -277,7 +277,7 @@
     (focus sel_section.lst)
     (enter
         OS_COMMON_ANIMATIONS
-        {sel_section.lst set_data (_1_none rb2 rb3 test)}
+        {sel_section.lst set_data (_1_none rb2 rb3)}
         {title.lbl set_localized {localize os_sus}}
         {full_selection.mesh set_showing FALSE}
         {set $os_in_transition FALSE}
