@@ -168,9 +168,9 @@
  (tail_max_freq 4.5)
  (tail_min_amp {if_else {== $sustains "rb3"} 0.15 0.25})
  (tail_max_amp {if_else {== $sustains "rb3"} 0.9 1.5})
- (tail_glow_width {if_else {==$sustains "test"} 2.0 1.7})
+ (tail_glow_width {if_else {==$sustains "test"} 5.0 5.0})
  (tail_pulse_rate {if_else {==$sustains "test"} 50 32})
- (tail_max_alpha {if_else {==$sustains "test"} 1.2 1})
+ (tail_max_alpha {if_else {==$sustains "test"} 5 5})
  (parts
   ((gem
     (type kMeshGem))

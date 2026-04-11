@@ -385,6 +385,11 @@
             {set $sustains "rb3"}
          }
       }
+	  {if {== {elem $entry 0} {basename mod_testsustain}}
+         {if {== {elem {find $entry mod_testsustain} 1} 1}
+            {set $sustains "test"}
+         }
+      }
       {if {== {elem $entry 0} {basename mod_nowhammyfx}}
          {if {== {elem {find $entry mod_nowhammyfx} 1} 1}
             {set $whammyfx FALSE}
