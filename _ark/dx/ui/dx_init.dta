@@ -31,13 +31,13 @@
 {set $slot5_color 4} ;4 = orange
 
 ;gem texture
-{set $gem "trans"}
+{set $gem "rb2"}
 
 ;strikeline texture
 #ifdef HX_WII ; wii transparency is broken atm, so the rb2dx smashers don't exist
 {set $smasher "rb2"} ; set it to rb2 "HD" texture instead
 #else
-{set $smasher "trans"}
+{set $smasher "rb2"}
 #endif
 
 ;lanes texture
@@ -47,7 +47,7 @@
 {set $nogemdividers FALSE}
 
 ;highway texture (guitar)
-{set $highwaygtr "transgender"}
+{set $highwaygtr "_1_none"}
 
 ;highway texture (bass)
 {set $highwaybass "_1_none"}
