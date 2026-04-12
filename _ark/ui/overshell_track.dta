@@ -166,7 +166,7 @@
                   SET_RAINBOWRB2_TEXTURE_PRESET
                }
                {do
-                  {set $dx_queue_stock_track FALSE}
+                  {set $dx_queue_stock_track TRUE}
                   SET_RAINBOWRB2_TEXTURE_PRESET
                }
             }
@@ -177,7 +177,7 @@
                   SET_TRANSRB2_TEXTURE_PRESET
                }
                {do
-                  {set $dx_queue_stock_track FALSE}
+                  {set $dx_queue_stock_track TRUE}
                   SET_TRANSRB2_TEXTURE_PRESET
                }
             }
@@ -188,7 +188,7 @@
                   SET_LESBIANRB2_TEXTURE_PRESET
                }
                {do
-                  {set $dx_queue_stock_track FALSE}
+                  {set $dx_queue_stock_track TRUE}
                   SET_LESBIANRB2_TEXTURE_PRESET
                }
             }
