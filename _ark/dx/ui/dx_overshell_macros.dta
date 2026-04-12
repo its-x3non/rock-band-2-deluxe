@@ -151,8 +151,8 @@
    {set $multiringcustomtexture TRUE}
    {set $multiring purple_rb4}
    {set $highwaycustomtexture TRUE}
-   {set $highwaygtr _1_none}
-   {set $highwaybass _1_none}
+   {set $highwaygtr trans}
+   {set $highwaybass trans}
    {set $highwaydrum _1_none}
    {set $streakcustomtexture TRUE}
    {set $streakgtr white_rb4}
@@ -209,8 +209,8 @@
    {set $multiringcustomtexture TRUE}
    {set $multiring purple_rb4}
    {set $highwaycustomtexture TRUE}
-   {set $highwaygtr _1_none}
-   {set $highwaybass _1_none}
+   {set $highwaygtr lesbian}
+   {set $highwaybass lesbian}
    {set $highwaydrum _1_none}
    {set $streakcustomtexture TRUE}
    {set $streakgtr white_rb4}
