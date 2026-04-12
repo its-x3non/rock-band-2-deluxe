@@ -74,7 +74,7 @@
     (focus sel_section.lst)
     (enter
         OS_COMMON_ANIMATIONS
-        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst os_rb1prst os_rb3prst os_rb4truprst os_rb4prst os_fnfestivalprst os_lrbprst os_tbrbprst)}
+        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst os_rb1prst os_rainbowrb2preset)}
         {title.lbl set_localized {localize os_trkpreset}}
         {full_selection.mesh set_showing FALSE}
         {set $os_in_transition FALSE}
