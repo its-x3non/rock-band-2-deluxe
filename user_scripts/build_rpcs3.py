@@ -8,6 +8,8 @@ sys.path.append("../dependencies/dev_scripts")
 from build_ark import build_patch_ark
 from download_mackiloha import download_mackiloha
 
+print("Building to RPCS3!")
+
 # List of required packages
 required_packages = ["psutil"]
 
