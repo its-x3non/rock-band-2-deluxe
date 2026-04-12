@@ -9,7 +9,7 @@
 {set $dx_connected_server none}
 
 ;sets default track speed. 1.15 is 115%, 1.30 is 130% and so on.
-{set $trackspeed 1.55}
+{set $trackspeed 1.6}
 
 ;sets default track length. 1.15 is 115%, 1.30 is 130% and so on.
 {set $tracklength 1.0}
@@ -31,17 +31,17 @@
 {set $slot5_color 4} ;4 = orange
 
 ;gem texture
-{set $gem "rb2"}
+{set $gem "trans_rb2"}
 
 ;strikeline texture
 #ifdef HX_WII ; wii transparency is broken atm, so the rb2dx smashers don't exist
 {set $smasher "rb2"} ; set it to rb2 "HD" texture instead
 #else
-{set $smasher "rb2"}
+{set $smasher "trans_rb2"}
 #endif
 
 ;lanes texture
-{set $lanestex "rb2"}
+{set $lanestex "trans_rb2"}
 
 ;no gem dividers
 {set $nogemdividers FALSE}
@@ -56,13 +56,13 @@
 {set $highwaydrum "_1_none"}
 
 ;streak texture (guitar)
-{set $streakgtr "rb4"}
+{set $streakgtr "white_rb4"}
 
 ;streak texture (bass)
-{set $streakbass "rb4"}
+{set $streakbass "white_rb4"}
 
 ;streak texture (drums)
-{set $streakdrum "rb4"}
+{set $streakdrum "white_rb4"}
 
 ;overdrive texture (guitar)
 {set $spotlightgtr "rb4"}
@@ -74,7 +74,7 @@
 {set $spotlightdrum "rb4"}
 
 ;multiplier ring texture
-{set $multiring "rb2dx"}
+{set $multiring "purple_rb4"}
 
 ;overdrive bar texture
 {set $odbar "rb2dx"}
@@ -83,7 +83,7 @@
 {set $rails "rb2"}
 
 ;flames texture
-{set $flames "rb2"}
+{set $flames "trans_rb2"}
 
 ;crowd meter texture
 {set $crowdmetertex "rb2"}
@@ -153,13 +153,13 @@
 #endif
 
 ;whammy fx
-{set $whammyfx TRUE}
+{set $whammyfx FALSE}
 
 ;crowd sfx
 {set $crowdsfx TRUE}
 
 ;track muting
-{set $trkmuting TRUE}
+{set $trkmuting FALSE}
 
 ;{modifier_mgr activate_modifier mod_nofail}
 ;{modifier_mgr activate_modifier mod_doublespeed}
