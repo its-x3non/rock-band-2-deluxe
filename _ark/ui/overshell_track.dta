@@ -74,7 +74,7 @@
     (focus sel_section.lst)
     (enter
         OS_COMMON_ANIMATIONS
-        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst os_rb1prst os_rainbowrb2preset)}
+        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst rainbow_rb2 trans_rb2 lesbian_rb2)}
         {title.lbl set_localized {localize os_trkpreset}}
         {full_selection.mesh set_showing FALSE}
         {set $os_in_transition FALSE}
@@ -160,7 +160,7 @@
                }
             }
          )
-         (os_rainbowrb2preset
+         (rainbow_rb2
             {if_else $texrunonce
                {do 
                   SET_RAINBOWRB2_TEXTURE_PRESET
@@ -168,6 +168,28 @@
                {do
                   {set $dx_queue_stock_track TRUE}
                   SET_RAINBOWRB2_TEXTURE_PRESET
+               }
+            }
+         )
+		 (trans_rb2
+            {if_else $texrunonce
+               {do 
+                  SET_TRANSRB2_TEXTURE_PRESET
+               }
+               {do
+                  {set $dx_queue_stock_track TRUE}
+                  SET_TRANSRB2_TEXTURE_PRESET
+               }
+            }
+         )
+		 (lesbian_rb2
+            {if_else $texrunonce
+               {do 
+                  SET_LESBIANRB2_TEXTURE_PRESET
+               }
+               {do
+                  {set $dx_queue_stock_track TRUE}
+                  SET_LESBIANRB2_TEXTURE_PRESET
                }
             }
          )
