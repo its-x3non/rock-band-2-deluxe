@@ -83,7 +83,7 @@
 {set $rails "rb2"}
 
 ;flames texture
-{set $flames "trans_rb2"}
+{set $flames "noglass_rb2"}
 
 ;crowd meter texture
 {set $crowdmetertex "rb2"}
