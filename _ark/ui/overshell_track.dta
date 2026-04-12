@@ -167,11 +167,7 @@
                }
                {do
                   {set $dx_queue_stock_track FALSE}
-				  {if_else $iamingamenow
-                     {do 
-                        SET_RAINBOWRB2_TEXTURE_PRESET
-                     }
-				  }
+                  SET_RAINBOWRB2_TEXTURE_PRESET
                }
             }
          )
@@ -182,11 +178,7 @@
                }
                {do
                   {set $dx_queue_stock_track FALSE}
-                  {if_else $iamingamenow
-                     {do 
-                        SET_TRANSRB2_TEXTURE_PRESET
-                     }
-				  }
+                  SET_TRANSRB2_TEXTURE_PRESET
                }
             }
          )
@@ -196,11 +188,8 @@
                   SET_LESBIANRB2_TEXTURE_PRESET
                }
                {do
-                  {set $dx_queue_stock_track TRUE}
-                  {if_else $iamingamenow
-                     {do 
-                        SET_LESBIANRB2_TEXTURE_PRESET
-                     }
+                  {set $dx_queue_stock_track FALSE}
+                  SET_LESBIANRB2_TEXTURE_PRESET
                }
             }
          )
