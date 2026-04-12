@@ -160,88 +160,6 @@
                }
             }
          )
-         (os_rb1prst
-            {if_else $texrunonce
-               {do 
-                  SET_RB1_TEXTURE_PRESET
-               }
-               {do
-                  {set $dx_queue_stock_track TRUE}
-                  SET_RB1_TEXTURE_PRESET
-               }
-            }
-         )
-         (os_rb3prst
-            {if_else $texrunonce
-               {do 
-                  SET_RB3_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track FALSE}
-                  SET_RB3_TEXTURE_PRESET
-               }
-            }
-            SET_RB3_TRACK_ANGLE
-         )
-         (os_rb4prst
-            {if_else $texrunonce
-               {do 
-                  SET_RB4_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track FALSE}
-                  SET_RB4_TEXTURE_PRESET
-               }
-            }
-            SET_RB4_TRACK_ANGLE
-         )
-         (os_rb4truprst
-            {if_else $texrunonce
-               {do 
-                  SET_RB4_TRUE_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track FALSE}
-                  SET_RB4_TRUE_TEXTURE_PRESET
-               }
-            }
-            SET_RB4_TRACK_ANGLE
-         )
-         (os_fnfestivalprst
-            {if_else $texrunonce
-               {do 
-                  SET_FNFESTIVAL_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track FALSE}
-                  SET_FNFESTIVAL_TEXTURE_PRESET
-               }
-            }
-            SET_FNFESTIVAL_TRACK_ANGLE
-         )
-         (os_lrbprst
-            {if_else $texrunonce
-               {do 
-                  SET_LRB_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track TRUE}
-                  SET_LRB_TEXTURE_PRESET
-               }
-            }
-         )
-         (os_tbrbprst
-            {if_else $texrunonce
-               {do 
-                  SET_TBRB_TEXTURE_PRESET
-               }
-               {do 
-                  {set $dx_queue_stock_track FALSE}
-                  SET_TBRB_TEXTURE_PRESET
-               }
-            }
-            SET_RB3_TRACK_ANGLE
-         )
       })
     (update_helpbar
             {helpbar
@@ -277,7 +195,7 @@
     (focus sel_section.lst)
     (enter
         OS_COMMON_ANIMATIONS
-        {sel_section.lst set_data (_1_none rb2 rb3)}
+        {sel_section.lst set_data (_1_none rb2 rb3 allwhite)}
         {title.lbl set_localized {localize os_sus}}
         {full_selection.mesh set_showing FALSE}
         {set $os_in_transition FALSE}
