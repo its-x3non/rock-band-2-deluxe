@@ -171,6 +171,7 @@
                      {do 
                         SET_RAINBOWRB2_TEXTURE_PRESET
                      }
+				  }
                }
             }
          )
@@ -185,6 +186,7 @@
                      {do 
                         SET_TRANSRB2_TEXTURE_PRESET
                      }
+				  }
                }
             }
          )
