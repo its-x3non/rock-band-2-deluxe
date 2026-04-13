@@ -74,7 +74,7 @@
     (focus sel_section.lst)
     (enter
         OS_COMMON_ANIMATIONS
-        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst rainbow_rb2 trans_rb2 lesbian_rb2)}
+        {sel_section.lst set_data (os_tex os_rb2dxprst os_rb2prst rainbow_rb2 trans_rb2 lesbian_rb2 yesod)}
         {title.lbl set_localized {localize os_trkpreset}}
         {full_selection.mesh set_showing FALSE}
         {set $os_in_transition FALSE}
@@ -190,6 +190,17 @@
                {do
                   {set $dx_queue_stock_track FALSE}
                   SET_LESBIANRB2_TEXTURE_PRESET
+               }
+            }
+         )
+		 (yesod
+            {if_else $texrunonce
+               {do 
+                  SET_YESOD_TEXTURE_PRESET
+               }
+               {do
+                  {set $dx_queue_stock_track FALSE}
+                  SET_YESOD_TEXTURE_PRESET
                }
             }
          )
