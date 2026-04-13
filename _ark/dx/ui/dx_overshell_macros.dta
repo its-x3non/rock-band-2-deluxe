@@ -155,8 +155,66 @@
    {set $highwaybass yesod}
    {set $highwaydrum _1_none}
    {set $streakcustomtexture TRUE}
-   {set $streakgtr white_rb4}
-   {set $streakbass white_rb4}
+   {set $streakgtr _1_none}
+   {set $streakbass _1_none}
+   {set $streakdrum white_rb4}
+   {set $spotlightgtrcustomtexture TRUE}
+   {set $spotlightgtr rb4}
+   {set $spotlightbasscustomtexture TRUE}
+   {set $spotlightbass rb4}
+   {set $spotlightdrumcustomtexture TRUE}
+   {set $spotlightdrum rb4}
+   {set $hwalpha_needs_reset TRUE}
+   {set $hwalpha rb2}
+   {set $hwstrk FALSE}
+   {set $nohwwarn FALSE}
+   {set $railwarn FALSE}
+   {set $fctype glow}
+)
+
+#define SET_LOBOTCORP_TEXTURE_PRESET
+(
+   {set $sustains "rb2"}
+   {set $nogemdividers FALSE}
+   {set $trackangle FALSE}
+   {set $voxhwcustomtexture TRUE}
+   {set $voxhw rb2}
+   {set $gemcustomtexture TRUE}
+   {set $gem lobotomycorp}
+   {set $smashercustomtexture TRUE}
+   {set $smasher rb4}
+   {set $smasherbracket FALSE}
+   {set $voxarrowcustomtexture TRUE}
+   {set $voxarrow rb2dx}
+   {set $voxnotescustomtexture TRUE}
+   {set $voxnotes rb2dx}
+   {set $voxodcustomtexture TRUE}
+   {set $voxod rb2}
+   {set $crowdmetercustomtexture TRUE}
+   {set $crowdmetertex rb2}
+   {set $scorecustomtexture TRUE}
+   {set $scoretex rb2}
+   {set $soloboxcustomtexture TRUE}
+   {set $solobox rb2}
+   {set $starscustomtexture TRUE}
+   {set $stars rb2}
+   {set $fontcustomtexture TRUE}
+   {set $font rb2}
+   {set $odbarcustomtexture TRUE}
+   {set $odbar rb2dx}
+   {set $railscustomtexture TRUE}
+   {set $rails rb2}
+   {set $flamescustomtexture TRUE}
+   {set $flames noglass_rb2}
+   {set $multiringcustomtexture TRUE}
+   {set $multiring purple_rb4}
+   {set $highwaycustomtexture TRUE}
+   {set $highwaygtr lobotomycorp}
+   {set $highwaybass lobotomycorp}
+   {set $highwaydrum lobotomycorp}
+   {set $streakcustomtexture TRUE}
+   {set $streakgtr _1_none}
+   {set $streakbass _1_none}
    {set $streakdrum white_rb4}
    {set $spotlightgtrcustomtexture TRUE}
    {set $spotlightgtr rb4}
